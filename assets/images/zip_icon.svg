@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g id="zipIcon">
+    <text x="50" y="55" font-size="90" text-anchor="middle" dominant-baseline="middle">📦</text>
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="scale"
+      values="1,1; 0.75,1.25; 1,1"
+      dur="1.5s"
+      repeatCount="indefinite"
+      begin="indefinite"
+      id="zipAnimation"/>
+  </g>
+</svg>

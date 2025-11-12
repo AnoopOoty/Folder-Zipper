@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Zipper</title>
+    <link rel="icon" type="image/png" href="assets/images/folder_icon_zipped.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="header-icon" id="headerIcon">
+                <img src="assets/images/folder_icon_zipped.png" alt="Zip Icon" class="header-icon-img" width="1.2em" height="1.2em">
+            </span> Folder Zipper</h1>
+        </header>
+        <section class="upload-section">
+            <div class="upload-text">Select a parent folder</div>
+            <p class="upload-hint">Selecting a parent folder will auto-detect child folders and list them separately</p>
+            <button class="btn browse-btn" id="browseBtn">Browse Folders</button>
+            <input type="file" id="folderInput" webkitdirectory directory multiple>
+        </section>
+        <section class="folders-section" id="foldersSection">
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon"><img src="assets/images/folder_icon.png" alt="Folder Icon"></div>
+                <p>No folders uploaded yet</p>
+            </div>
+            <div id="foldersList"></div>
+        </section>
+        <section class="actions-section">
+            <button class="action-btn zip-all-btn" id="zipAllBtn" disabled style="display: none;">Zip All Folders</button>
+            <button class="action-btn stop-btn" id="stopBtn" disabled style="display: none;">Stop Zipping</button>
+            <button class="action-btn cleanup-btn" id="cleanupBtn" disabled style="display: none;">Remove Unwanted Files</button>
+            <button class="action-btn download-all-btn" id="downloadAllBtn" disabled style="display: none;">Download All Zips</button>
+            <button class="action-btn clear-all-btn" id="clearAllBtn" disabled style="display: none;">Clear All</button>
+        </section>
+    </div>
+    <script src="assets/js/jszip.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
